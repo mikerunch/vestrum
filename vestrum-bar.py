@@ -22,7 +22,7 @@ class VestrumBar(QWidget):
 
         # Icon laden (bitte Pfad anpassen!)
         self.icon_label = QLabel()
-        pixmap = QPixmap(os.path.join(os.path.dirname(__file__), "icons/vestrum_icon.png")).scaled(50, 50, Qt.KeepAspectRatio, Qt.SmoothTransformation)
+        pixmap = QPixmap(os.path.join(os.getcwd(), "icons", "vestrum_icon.png")).scaled(50, 50, Qt.KeepAspectRatio, Qt.SmoothTransformation)
         self.icon_label.setPixmap(pixmap)
         layout.addWidget(self.icon_label)
 
